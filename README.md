@@ -9,6 +9,18 @@ Screenshot
 |Change shadow color               |Change shadow margin                   |Demo                               |
 |![](/screenshot/shadow_color.gif) |![](/screenshot/shadow_margin_hide.gif)|![](/screenshot/shadow_demo.gif)   |
 
+## Download ##
+### Gradle ###
+```gradle
+dependencies {
+    implementation 'com.henley.android:shadowlayout:1.0.0'
+}
+```
+
+### APK Demo ###
+
+下载 [APK-Demo](https://github.com/HenleyLee/ShadowLayout/raw/master/app/app-release.apk)
+
 Usages
 
 ```xml
