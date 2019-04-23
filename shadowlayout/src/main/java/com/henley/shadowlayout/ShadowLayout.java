@@ -429,7 +429,7 @@ public class ShadowLayout extends ViewGroup {
     }
 
     /**
-     * Sets the text color.
+     * Sets the shadow color.
      *
      * @param shadowColor A color value in the form 0xAARRGGBB.
      * @attr ref R.styleable#ShadowLayout_shadowColor
@@ -514,7 +514,7 @@ public class ShadowLayout extends ViewGroup {
     }
 
     /**
-     * Gets the shadow radius in pixels.
+     * Gets the shadow dx in pixels.
      *
      * @attr ref R.styleable#ShadowLayout_shadowDx
      * @see #setShadowDx(float)
