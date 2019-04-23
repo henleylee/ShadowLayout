@@ -19,7 +19,7 @@ dependencies {
 
 ### APK Demo ###
 
-下载 [APK-Demo](https://github.com/HenleyLee/ShadowLayout/raw/master/app/app-release.apk)
+Download [APK-Demo](https://github.com/HenleyLee/ShadowLayout/raw/master/app/app-release.apk)
 
 Usages
 
