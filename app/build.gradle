@@ -14,12 +14,30 @@ android {
         applicationId "com.henley.shadowlayout.sample"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+
+        henley {
+            storeFile file('./henley.jks')
+            storePassword '123456'
+            keyAlias 'henley'
+            keyPassword '123456'
+        }
+
+    }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.henley
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.henley
         }
     }
+
 }
 
 dependencies {
@@ -30,7 +48,8 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:$supportVersion"
     implementation "com.google.android:flexbox:$flexboxVersion"
     implementation "com.android.support.constraint:constraint-layout:$constraintVersion"
-    implementation project(':shadowlayout')
+//    implementation project(':shadowlayout')
+    implementation 'com.henley.android:shadowlayout:1.0.0'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

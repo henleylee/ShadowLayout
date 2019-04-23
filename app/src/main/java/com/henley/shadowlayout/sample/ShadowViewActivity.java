@@ -1,5 +1,6 @@
 package com.henley.shadowlayout.sample;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -72,7 +73,7 @@ public class ShadowViewActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) {
+        public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
             if (holder instanceof ShadowViewSeekItemHolder) {
                 ((ShadowViewSeekItemHolder) holder).bind(SeekItem.values()[position], shadowLayout);
             } else if (holder instanceof ShadowViewColorItemHolder) {
