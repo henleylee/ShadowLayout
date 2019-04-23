@@ -27,3 +27,5 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     compileOnly "com.android.support:support-compat:$supportVersion"
 }
+
+apply from: '../gradle/bintray.gradle'
