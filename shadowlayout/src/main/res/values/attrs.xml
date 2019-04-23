@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ShadowLayout">
+        <attr name="android:foreground" />
+        <attr name="shadowMargin" format="dimension" />
+        <attr name="shadowMarginTop" format="dimension" />
+        <attr name="shadowMarginLeft" format="dimension" />
+        <attr name="shadowMarginRight" format="dimension" />
+        <attr name="shadowMarginBottom" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="cornerRadiusTL" format="dimension" />
+        <attr name="cornerRadiusTR" format="dimension" />
+        <attr name="cornerRadiusBL" format="dimension" />
+        <attr name="cornerRadiusBR" format="dimension" />
+        <attr name="foregroundColor" format="color" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowDx" format="float" />
+        <attr name="shadowDy" format="float" />
+        <attr name="shadowRadius" format="dimension" />
+        <attr name="backgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ShadowLayout_Layout">
+        <attr name="layout_gravity" />
+    </declare-styleable>
+
+</resources>
