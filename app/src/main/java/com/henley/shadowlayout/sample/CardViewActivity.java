@@ -7,10 +7,6 @@ import android.support.v7.widget.CardView;
 import android.view.ViewGroup;
 import android.widget.SeekBar;
 
-/**
- * @author liyunlong
- * @date 2019/4/22 17:19
- */
 public class CardViewActivity extends AppCompatActivity {
 
     @Override

@@ -3,7 +3,9 @@ package com.henley.shadowlayout;
 import android.graphics.Path;
 
 /**
- * @author liyunlong
+ * Shape tools
+ *
+ * @author Henley
  * @date 2019/4/22 17:05
  */
 final class ShapeUtils {

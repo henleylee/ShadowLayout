@@ -21,7 +21,7 @@ publish {
     userOrg = 'henleylee'
     groupId = 'com.henley.android'
     artifactId = 'shadowlayout'
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.2'
     uploadName = 'ShadowLayout'
     desc = 'Android custom shadow layout, can replace your CardView.'
     website = siteUrl
