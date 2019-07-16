@@ -7,26 +7,6 @@
     android:layout_height="match_parent"
     android:background="#F5F5F5">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/bottom_sheet"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:background="@android:color/white"
-        app:behavior_hideable="false"
-        app:behavior_peekHeight="200dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="8dp"
-        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
-        tools:ignore="MissingPrefix">
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/view_recycler"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clipToPadding="false"
-            android:paddingBottom="16dp" />
-    </android.support.v7.widget.CardView>
-
     <com.henley.shadowlayout.ShadowLayout
         android:id="@+id/shadow_view"
         android:layout_width="match_parent"
@@ -45,5 +25,27 @@
             android:text="Google Developer Days Europe 2017 took place in Krakow, Poland. In this playlist, you can find all the recorded sessions from the event, across all tracks (Develop on Mobile, Mobile Web, Beyond Mobile, and Android)." />
 
     </com.henley.shadowlayout.ShadowLayout>
+
+    <com.henley.shadowlayout.ShadowLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:backgroundColor="@android:color/white"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="200dp"
+        app:cornerRadiusTL="10dp"
+        app:cornerRadiusTR="10dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        tools:ignore="MissingPrefix">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/view_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp" />
+
+    </com.henley.shadowlayout.ShadowLayout>
+
 </android.support.design.widget.CoordinatorLayout>
 

@@ -16,6 +16,7 @@ import android.os.Build;
 import android.support.annotation.ColorInt;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
@@ -113,7 +114,7 @@ public class ShadowLayout extends ViewGroup {
         bgPaint.setStyle(Paint.Style.FILL);
         setLayerType(LAYER_TYPE_SOFTWARE, null);
         setWillNotDraw(false);
-        setBackground(null);
+        ViewCompat.setBackground(this, null);
     }
 
     @Override
